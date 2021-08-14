@@ -1,0 +1,68 @@
+/* ----- Typo ----- */
+$font-topic: "PSL Kittithada Pro", sans-serif;
+$font-read: "Sarabun", sans-serif;
+$font-size-h1: 60px;
+$font-size-h1-m: 60px;
+$font-size-h2: 50px;
+$font-size-h2-m: 50px;
+$font-size-h3: 40px;
+$font-size-h3-m: 40px;
+$font-size-h4: 30px;
+$font-size-h5: 25px;
+$font-size-h6: 20px;
+$font-size-p: 16px;
+$default: 20px;
+
+/* ----- Responsive ----- */
+$size-md: 768px;
+$size-lg: 992px;
+$size-xl: 1200px;
+$size-iphone5: 320px; 
+
+/* ----- Colors ----- */
+$primary-0: #DA291C;
+$primary-1: #DA291C;
+$primary-2: #F78F34;
+$primary-3: #FFE000;
+$secondary-1: #f8f8f8;
+$secondary-2: #f2f2f2;
+$secondary-3: #dadada;
+$secondary-4: #bdbdbd;
+$secondary-5: #828282;
+$text-color: #383838;
+$danger: #EB5757;
+$info: #2F80ED;
+$white: #fff;
+$black: #000;
+$grey: #838383;
+$primary-1-hover: #DA291C;
+$primary-2-hover: #E56F14;
+$primary-3-hover: #FFE000;
+$pagination-bg: #DFDFDF;
+$border-color: #EAEAEA;
+$box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+$box-shadow-large: 6px 6px 10px rgba(0, 0, 0, 0.16);
+$card-border-radius: 0px;
+$card-border: 1px solid #F2F2F2;
+/* ----- Spacing ----- */
+$space: 16px;
+$space-m: 30px;
+$card-space: 20px; 
+
+/* ----- Header ----- */
+$top-height-d: 38px;
+$nav-height-d: 90px;
+$nav-height-m: 70px;
+$noti-height-d: 50px;
+$noti-height-m: 40px;
+$top-text: 13px;  
+$nav-bg-m: #004E23;
+$top-bg-d: #004E23;
+$megamenu-bg: #FAFAFA;
+$nav-line:  rgba(255, 255, 255, 0.3);
+
+/* ----- Footer ----- */
+$footer-info-height: 50px;
+$footbar-bg: #004E23;
+/* ----- ETC. ----- */
+$transition: .4s ease all;

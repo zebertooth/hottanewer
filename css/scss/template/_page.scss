@@ -1,0 +1,455 @@
+/*----- TREND ----- */
+.page-fusion-trend { 
+    background-image: url('../img/trend-page-bg.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.page-complete { 
+    background-image: url('../img/fusion-complete-bg.svg');
+    background-size: 90%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    > div { 
+        min-height: 600px;
+    }
+    img { 
+        max-width: 185px;
+        margin: $space auto;
+    }
+    h1 { 
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+}
+
+.page-faq { 
+    background-color: #FF8F1C;
+    background-image: url('../img/faq-bg.svg');
+    background-size: 100% auto;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    padding-bottom: 180px;
+}
+
+.page-find { 
+    background-color: #BD261B;
+    background-image: url('../img/find-bg.svg');
+    background-size: 100% auto;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    padding-bottom: 180px;
+    min-height: 100vh;
+}
+
+.square-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    &.-m3 {
+        .square {
+            flex-basis: calc(33.33% - 16px);
+        }
+    }
+    .square {
+        position: relative;
+        margin: 5px;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        // max-width: 106px;
+        // max-height: 106px;
+        background-color: white;
+        &::after { 
+            content: "";
+            display: block;
+            padding-bottom: 100%;
+        }
+        &::before {
+            content: '';
+            display: block;
+        }
+        a { 
+            position: absolute;
+            top: 0; left: 0;
+            height: 100%;
+            width: 100%;
+            display: flex;          
+            justify-content: center;
+            align-items: center; 
+            padding: 0;
+            overflow: hidden;
+            img { 
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+.page-contact { 
+    height: 100%;
+    min-height: 100%;
+    .contact-triangle-left { 
+        position: absolute;
+        left: -170px;
+        top: 0;
+        width: 170px;
+        height: 100%;
+    }
+    .contact-triangle-down { 
+        position: absolute;
+        left: 0;
+        bottom: -40px;
+        width: 100%;
+        height: 40px;
+    }
+    .contact-banner-image { 
+        overflow: hidden;
+        height: 250px;
+        min-height: 250px;
+        position: relative;
+        img { 
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: bottom;
+            height: 100%;
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+    .contact-banner-description { 
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 50px 20px 20px;
+        position: relative;
+    }
+    .contact-title { 
+        font-size: 35px;
+        line-height: 30px;
+    }
+   
+}
+.contact-us { 
+    background-image: url('../img/fusion-watermask-orange.svg');
+    background-size: 90%;
+    background-position: center 8%;
+    background-repeat: no-repeat;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    .contact-channal { 
+        margin-top: calc(#{$space-m} * 2);
+        img {
+            height: auto;
+            width: 160px;
+            filter: drop-shadow($box-shadow-large);
+        }
+        .detail { 
+            display: block;
+            font-size: 25px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        .sub-detail { 
+            font-size: 20px;
+            letter-spacing: 1px;
+        }
+    }
+}
+.contact-form { 
+    h1 { 
+        letter-spacing: 1px;
+    }
+    .contact-form--map { 
+        overflow: hidden;
+        height: 500px;
+        min-height: 500px;
+        position: relative;
+        img { 
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            height: 100%;
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+    .contact-form--form { 
+        background-image: url('../img/contact-form-bg.svg');
+        background-size: 90%;
+        background-position: center 8%;
+        background-repeat: no-repeat;
+        padding: 50px 25px;
+        max-width: 100%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        input, select { 
+            margin-bottom: calc(#{$space} * 1.2);
+        }
+    }
+}
+.benefit { 
+    .benefit-detail { 
+        h1{  
+            line-height: 40px;
+            margin-bottom: 0;
+            font-size: 50px;
+        }
+        h2 { 
+            font-size: 35px;
+            font-weight: 300;
+            line-height: 40px;
+            margin-bottom: 1.5rem;
+            margin-top: 1rem;
+        }
+        span { 
+            font-size: 25px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+    }
+}
+
+.howto-drink-m { 
+    padding: 70px 30px 0px;
+    &.-hot {
+        background-color: $primary-1;
+    }
+    &.-cold { 
+        background-color: $primary-2;
+    }
+    .drink-tab  {
+        .nav-tabs {
+            justify-content: space-between;
+            border: none;
+            a {
+                flex: 1;
+                margin: 0 $space;
+                border-radius: 0;
+                border: 1px solid white;
+                transform: skew(-20deg);
+                text-align: center;
+                span { 
+                    transform: skew(20deg);
+                    display: block;
+                    font-size: 30px;
+                    font-weight: bold;
+                    color: white;
+                }
+                &.active.-hot-tab { 
+                    span { 
+                        color: $primary-1;
+                    }
+                }
+                &.active.-cold-tab { 
+                    span { 
+                        color: $primary-2;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: $size-lg) {
+
+    .benefit { 
+        .benefit-detail { 
+            h1{  
+                font-size: 60px;
+            }
+            h2 { 
+                font-size: 50px;
+            }
+        }
+    }
+    .contact-form { 
+        .contact-form--map { 
+            height: 666px;
+            min-height: 666px;
+        }
+        .contact-form--form { 
+            max-width: 550px;
+            padding: 0 20px;
+        }
+    }
+    .contact-us { 
+        background-size: 60%;
+        background-position: center center;
+    }
+    .page-contact { 
+        height: 390px;
+        min-height: 390px;
+        .contact-banner-image { 
+            height: 390px;
+            min-height: 390px;
+        }
+        .contact-banner-description { 
+            padding: 30px;
+        }
+        .contact-title { 
+            font-size: 40px;
+            line-height: 30px;
+        }
+    }
+    .square-container {
+        display: flex;
+        flex-wrap: wrap;
+        &.-d5 {
+            .square {
+                flex-basis: calc(20% - 16px);
+            }
+        }
+        &.-d3 {
+            .square {
+                flex-basis: calc(33.33% - 16px);
+            }
+        }
+        .square {
+            max-width: 120px;
+            max-height: 120px;
+            width: 120px;
+            height: 120px;
+        }
+    }
+}
+.search-container { 
+    .search-form {
+        .input-group { 
+            border-bottom: 1px solid #B9B9B9;
+            .input-group-text { 
+                border-bottom: none;
+            }
+        }
+        display: flex;
+        flex-direction: column;
+        label {
+            flex: 1;
+            margin-bottom: $space;
+            margin-right: 0;
+            height: 100%;
+        }
+        input { 
+            margin-right: calc(#{$space} * 1.2);
+            border-bottom: none;
+            padding-right: 0;
+            padding-left: $space;
+        }
+    }
+}
+@media (min-width: $size-lg) {
+    .page-complete { 
+        background-size: 30%;
+        > div { 
+            min-height: 700px;
+        }
+        
+    }
+    .search-container  {
+        max-width: 530px;
+        margin: 0 auto;
+    }
+    .howto-drink-d {
+        padding-top: 70px ;
+        padding-bottom: 40px;
+        background-image: url('../img/bg-red-orange.svg');
+        background-position: bottom center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-bottom: -5px; // remove white spac
+        .label { 
+            transform: skew(-20deg);
+            background-color: white;
+            padding: 8px $space; 
+            max-width: 190px;
+            margin: 0 auto $space;
+            text-align: center;
+            span { 
+                transform: skew(20deg);
+                font-size: 40px;
+                font-weight: bold;
+                display: block;
+
+            }
+        }
+        .hot { 
+            .label.-hot { 
+                span {
+                    color: $primary-1;
+                }
+            }
+        }
+        .cold { 
+            .label.-cold { 
+                span {
+                    color: $primary-2;
+                }
+            }
+        }
+        .step { 
+            text-align: center;
+            z-index: 1;
+            position: relative;
+            > div{ 
+                &:nth-child(1),&:nth-child(3)  {
+                   margin-top: 90px;
+                   position: relative;
+                }
+                &:nth-child(1) {
+                    &::after {
+                        content: url('../img/step-arrow-1.svg');
+                        width: 50px;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                    }
+                   
+                }
+                &:nth-child(3){ 
+                    &::after {
+                        content: url('../img/step-arrow-2.svg');
+                        width: 50px;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                    }
+                }
+            }
+            img { 
+                max-width: 200px;
+            }
+            .step-caption { 
+                font-size: 25px;
+                color: white;
+                display: block;
+                word-break: break-word;
+            }
+        }
+        .drink { 
+            margin-left: auto;
+            margin-right: auto;
+            img { 
+                display: block;
+                max-height:300px;
+                width: auto;
+                height: auto;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: -80px;
+                z-index: 0;
+            }
+        }
+    }
+}
+
+.privacy-policy { 
+    p { 
+        line-height: 30px;
+    }
+}

@@ -1,0 +1,53 @@
+/*
+ * Font Name: PSL Kittithada Pro
+ */
+ @font-face {
+  font-family: 'PSL Kittithada Pro';
+  src: url('../fonts/PSLKittithada/PSLKittithadaPro.woff2') format('woff2'),
+      url('../fonts/PSLKittithada/PSLKittithadaPro.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'PSL Kittithada Pro';
+  src: url('../fonts/PSLKittithada/PSLKittithadaProBold.woff2') format('woff2'),
+      url('../fonts/PSLKittithada/PSLKittithadaProBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+  
+/*
+ * Font Name: Sarabun
+ */
+@font-face {
+    font-family: "Sarabun";
+    src: url("../fonts/sarabun/Sarabun-Light.svg#Sarabun-Light") format("svg"),
+            url('../fonts/sarabun/Sarabun-Light.woff') format('woff'),
+            url('../fonts/sarabun/Sarabun-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+  font-family: "Sarabun";
+  src: url("../fonts/sarabun/Sarabun-Regular.svg#Sarabun-Regular") format("svg"),
+        url('../fonts/sarabun/Sarabun-Regular.woff') format('woff'),
+        url('../fonts/sarabun/Sarabun-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Sarabun";
+  src: url("../fonts/sarabun/Sarabun-Bold.svg#Sarabun-Regular") format("svg"),
+        url('../fonts/sarabun/Sarabun-Bold.woff') format('woff'),
+        url('../fonts/sarabun/Sarabun-Bold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+  

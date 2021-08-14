@@ -1,0 +1,89 @@
+.site-footer { 
+   position: relative;
+   z-index: 11;
+    .footer-logo { 
+        padding: 8px 20px;
+        img { 
+            max-width: 120px;
+        }
+    }
+    .footer-headline { 
+       padding-right: 20px;
+       padding-left: 10px;
+    }
+    .footer-social { 
+        background-color: $primary-1;
+    }
+    .social {
+        
+        .social-item { 
+            img { 
+                filter: invert(30%) sepia(82%) saturate(2960%) hue-rotate(346deg) brightness(83%) contrast(107%);
+                transition: $transition; 
+            }
+            width: 40px;
+            height: 40px;
+            background-color: white;
+            transition: $transition; 
+            &:hover { 
+                background-color: $primary-1;
+                img {
+                    filter: brightness(0) invert(1);
+
+                }
+            } 
+        }
+    }
+    .footer-link { 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .link { 
+            padding: 0 8px;
+            font-weight: bold;
+            font-size: 20px;
+            text-transform: uppercase;
+            color: white;
+            border-right: 1px solid white;
+            &:last-child { 
+               border-right: none; 
+            }
+            &:hover { 
+                color: $primary-2;
+            }
+        }
+    }
+    .footer-copyright { 
+        span { 
+            font-size: 14px;
+            color: white;
+            font-weight: bold;
+            margin-left: 10px;
+            text-transform: uppercase;
+        }
+    }
+}
+
+@media (min-width: $size-lg) {
+    .site-footer { 
+        .row { 
+            min-height: 90px;
+        }
+        .footer-social { 
+            background-color: $primary-2;
+        }
+        .social {
+            flex-wrap: wrap;
+            .social-item { 
+                img { 
+                    filter: none;
+                }
+                min-width: 28px;
+                width: 28px;
+                height: 28px;
+                background-color: white;
+            }
+        }
+    }
+   
+}

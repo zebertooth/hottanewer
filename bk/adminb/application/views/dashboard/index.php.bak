@@ -1,0 +1,129 @@
+<!-- ============================================================== -->
+            <!-- Bread crumb and right sidebar toggle -->
+            <!-- ============================================================== -->
+             <div class="page-breadcrumb">
+                <div class="row">
+                    <div class="col-12 d-flex no-block align-items-center">
+                        <h4 class="page-title">Dashboard</h4>
+                        <div class="ml-auto text-right">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="#">หน้าหลัก</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">ภาพรวมระบบ</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+<!-- Cards -->
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card m-t-0">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="peity_line_neutral left text-center m-t-10"><span>
+									<i class="fas fa-calculator"></i>
+                                       
+                                        </span>
+                                        <h6>10%</h6>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 border-left text-center p-t-10">
+                                    <h3 class="mb-0 font-weight-bold"><?php echo number_format($this->topup_model->getPerson_active(),0,'',','); ?></h3>
+                                    <span class="text-muted">Total User</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card m-t-0">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="peity_bar_bad left text-center m-t-10"><span>
+                                      
+										<i class="fas fa-user-plus"></i>
+                                        </span>
+                                        <h6>-40%</h6></div>
+                                </div>
+                                <div class="col-md-6 border-left text-center p-t-10">
+                                    <h3 class="mb-0 font-weight-bold"><?php echo $this->topup_model->getPerson_regis(date('Y-m-d'));?></h3>
+                                    <span class="text-muted">New Users</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card m-t-0">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="peity_line_good left text-center m-t-10"><span>
+									<i class="far fa-user"></i>
+                               
+                                        </span>
+                                        <h6>+60%</h6>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 border-left text-center p-t-10">
+                                    <h3 class="mb-0 "><?php echo number_format($this->topup_model->user_active(),0,'',','); ?></h3>
+                                    <span class="text-muted">Active Users</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card m-t-0">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="peity_bar_good left text-center m-t-10"><span><i class="fas fa-braille"></i></span>
+                                        <h6>+30%</h6>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 border-left text-center p-t-10">
+                                    <h3 class="mb-0 font-weight-bold"><?php echo $this->topup_model->getonline();?></h3>
+                                    <span class="text-muted">Online</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End cards -->
+              <div class="row dashboard">
+
+                 
+        
+                    
+
+
+</div>
+<div class="row">
+
+                    
+                  
+                  
+
+
+</div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-body">
+ <div class="d-md-flex align-items-center">
+                                    <div>
+                                        <h4 class="card-title">ระบบจัดการเเอดมิน</h4>
+                                       
+                                    </div>
+                                </div>
+                                <div class="row">
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ============================================================== -->
+                <!-- Sales chart -->
+                <!-- ============================================================== -->
+</div>
+
